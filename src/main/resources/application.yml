@@ -1,0 +1,7 @@
+custom-logger:
+  http:
+    enabled: false
+    level: info
+  methods:
+    enabled: true
+    level: info

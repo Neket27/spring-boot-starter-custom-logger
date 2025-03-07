@@ -1,0 +1,2 @@
+custom.logger.config.logger.HttpLoggerAutoConfiguration
+custom.logger.config.logger.LoggerAutoConfiguration
