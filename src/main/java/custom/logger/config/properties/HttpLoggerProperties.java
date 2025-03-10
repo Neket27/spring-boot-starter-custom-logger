@@ -1,5 +1,6 @@
 package custom.logger.config.properties;
 
+import org.slf4j.event.Level;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
@@ -8,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class HttpLoggerProperties extends LoggerProperties {
 
     private boolean enabled = false;
-    private String level = "info";
+    private Level level = Level.INFO;
 
     @Override
     public boolean isEnabled() {
@@ -21,12 +22,12 @@ public class HttpLoggerProperties extends LoggerProperties {
     }
 
     @Override
-    public String getLevel() {
+    public Level getLevel() {
         return level;
     }
 
     @Override
-    public void setLevel(String level) {
+    public void setLevel(Level level) {
         this.level = level;
     }
 }

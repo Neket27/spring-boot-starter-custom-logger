@@ -16,5 +16,4 @@ public class LoggerAutoConfiguration {
     public MethodLogger methodLogger(MethodLoggerProperties methodLoggerProperties) {
         return new MethodLogger(methodLoggerProperties);
     }
-
 }

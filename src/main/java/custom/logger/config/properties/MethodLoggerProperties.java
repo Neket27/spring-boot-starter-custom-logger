@@ -1,5 +1,6 @@
 package custom.logger.config.properties;
 
+import org.slf4j.event.Level;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
@@ -8,7 +9,7 @@ import org.springframework.stereotype.Component;
 public class MethodLoggerProperties extends LoggerProperties {
 
     private boolean enabled = true;
-    private String logLevel = "INFO";
+    private Level logLevel = Level.INFO;
 
     @Override
     public boolean isEnabled() {
@@ -21,12 +22,12 @@ public class MethodLoggerProperties extends LoggerProperties {
     }
 
     @Override
-    public String getLevel() {
+    public Level getLevel() {
         return logLevel;
     }
 
     @Override
-    public void setLevel(String logLevel) {
+    public void setLevel(Level logLevel) {
         this.logLevel = logLevel;
     }
 }
